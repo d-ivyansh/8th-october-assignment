@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width:30vw;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        .container{
+            display: grid;
+            border: 1px solid;
+            gap: 20px;
+            padding: 20px;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .brown{
+            background-color: brown;
+        }
+        @media(max-width:500px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 20px;
+                padding: 20px;
+                background-color: floralwhite;
+            }
+            .box{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red box">box1</div>
+        <div class="green box">box2</div>
+        <div class="blue box">box3</div>
+        <div class="brown box">box4</div>
+    </div>
+</body>
+</html>

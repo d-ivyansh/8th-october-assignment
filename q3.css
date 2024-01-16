@@ -1,0 +1,19 @@
+.navbar{
+    background-color: rgb(53, 53, 53);
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+@media(max-width:768px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
